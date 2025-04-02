@@ -34,8 +34,9 @@ from tqdm import tqdm
 from wgangp_64x64 import GoodGenerator, GoodDiscriminator, ResidualBlock
 
 import numpy as np
-import tensorflow as tf
-tf.disable_eager_execution()
+import tensorflow.compat.v1 as tf
+tf.disable_eager_execution()  # Correct way for TensorFlow 2.x
+
 
 import tflib as lib
 import tflib.ops.linear
