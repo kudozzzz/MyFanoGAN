@@ -30,7 +30,7 @@ import re
 sys.path.append(os.getcwd())
 
 import tensorflow as tf
-tf.disacble_eager_execution()
+tf.disable_eager_execution()
 import time
 import functools
 from tqdm import tqdm
