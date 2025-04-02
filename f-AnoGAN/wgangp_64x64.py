@@ -29,8 +29,9 @@ import numpy as np
 import re
 sys.path.append(os.getcwd())
 
-import tensorflow as tf
-tf.disable_eager_execution()
+import tensorflow.compat.v1 as tf
+tf.disable_eager_execution()  # Correct way for TensorFlow 2.x
+
 import time
 import functools
 from tqdm import tqdm
